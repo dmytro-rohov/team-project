@@ -1,0 +1,87 @@
+/* colors vars */
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #101010;
+    --color-black--alfa: #0000002f;
+    --color-gray: #393939;
+    --color-gray--dark: #252525;
+    --color-gray--light: #D9D9D9;
+    --color-yellow: #FFBB56;
+    --color-green: #2DC066;
+}
+
+
+/* resets styles */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-gray);
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-white);
+}
+
+html, body, p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ojuju', sans-serif;
+  color: var(--color-black);
+  font-weight: 400;
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-gray--dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray--light);
+    border-radius: 10px;
+}
+
+
+/*  global classes */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
