@@ -28,6 +28,7 @@
    
     <!-- css files tags -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
@@ -46,16 +47,272 @@
         <section class="aboutus-section"></section>
 
         <!-- portfolio section -->
-        <section class="portfolio-section"></section>
+        <section class="portfolio-section">
+            <div class="portfolio-section__wrapper"> 
+                <figure class="portfolio-section__item" data-index="1">
+                    <img class="portfolio-section__img" alt="Modern bedroom with floor-to-ceiling windows overlooking the ocean, featuring minimalist decor and natural light"
+                        src="./assets/img/portfolio-section/portfolio-1.webp" />
+                    <figcaption class="portfolio-section__img-caption">
+                        <h2 class="portfolio-section__item-title">. where light shapes living</h2>
+                        <p class="portfolio-section__item-text">Soft morning light fills each room through panoramic glass, creating a calm space where your day starts slowly and naturally.</p>
+                    </figcaption>
+                </figure>
+        
+                <figure class="portfolio-section__item" data-index="2">
+                    <img class="portfolio-section__img" alt="Modern kitchen with marble countertop, wooden cabinets, and decorative spheres"
+                        src="./assets/img/portfolio-section/portfolio-2.webp" />
+                    <figcaption class="portfolio-section__img-caption">
+                        <h2 class="portfolio-section__item-title">. quiet luxury in every detail</h2>
+                        <p class="portfolio-section__item-text">Natural stone, warm wood, and gentle fabrics form a tactile environment that feels grounded, warm, and timeless.</p>
+                    </figcaption>
+                </figure>
+        
+                <figure class="portfolio-section__item" data-index="3">
+                    <img class="portfolio-section__img" alt="Modern living room with ocean view, minimalist furniture, and natural light"
+                        src="./assets/img/portfolio-section/portfolio-3.webp" />
+                    <figcaption class="portfolio-section__img-caption">
+                        <h2 class="portfolio-section__item-title">. designed to breathe</h2>
+                        <p class="portfolio-section__item-text">Open layouts, clean lines, and seamless transitions blur the boundary between interior and nature – letting the coast become part of your daily rhythm.</p>
+                    </figcaption>
+                </figure>
+        
+                <figure class="portfolio-section__item" data-index="4">
+                    <img class="portfolio-section__img" alt="Modern coastal lounge with plush chairs, wooden tables, glass pendant lights, and lush greenery by the sea"
+                        src="./assets/img/portfolio-section/portfolio-4.webp" />
+                    <figcaption class="portfolio-section__img-caption">
+                        <h2 class="portfolio-section__item-title">. a place made for silence</h2>
+                        <p class="portfolio-section__item-text">Every corner is crafted to reduce noise, slow the mind, and invite presence. It’s not just architecture – it’s a feeling.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
         <!-- products section -->
         <section class="aboutus-section"></section>
 
         <!-- reviews section -->
-        <section class="reviews-section"></section>
+        <section class="reviews-section">
+            <div class="reviews-section__wrapper">
+                <h2 class="reviews-section__title container">. stories by <br> the Sea</h2>
+
+                <div class="swiper reviews-section__slider">
+                    <div class="swiper-wrapper reviews-section__slider-wrapper">
+
+                        <div data-index="0" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-5.webp" alt="Woman with camera on sidewalk by fence" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Linda Rose</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Waking up to the sound of the waves and having the entire terrace to myself is an experience I’ll never forget. Every morning feels like a private escape, with soft sunlight filling the room and the gentle sea breeze carrying a sense of calm. Pure serenity in every moment.”</p>
+                            </div>
+                        </div>
+
+                        <div data-index="1" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-1.webp" alt="Man with camera and sunglasses standing outdoors" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Jeremy Parker</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Nothing compares to opening my eyes to gentle waves and stepping out onto an empty terrace just for me. Every sunrise brings peace, light, and that soothing sea air. Pure relaxation from the very first moment.</p>
+                            </div>
+                        </div>
+                        
+                        <div data-index="2" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-2.webp" alt="Man in olive turtleneck with suspenders, hand behind head, against white wall" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Tom Spence</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg class="not-fill" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Waking up to the ocean’s rhythm and having a quiet terrace all to myself feels magical. Mornings here are like a personal retreat — sunlight pouring in softly and the breeze whispering calm. Absolutely unforgettable.”</p>
+                            </div>
+                        </div>
+                
+                        <div data-index="3" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-3.webp" alt="Two women exchange items while traveling with luggage" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Ann Davis</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">““There’s something special about waking up to waves and having a whole terrace to enjoy alone. Each morning feels like a quiet escape — golden light drifting in and the peaceful breeze setting the tone. Total bliss.”</p>
+                            </div>
+                        </div>
+                
+                        <div data-index="4" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-4.webp" alt="Woman with hat against mossy stone wall" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Mary Ford</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Opening the door to my terrace and hearing the waves first thing in the morning is unforgettable. The sun rises gently, the sea air feels fresh, and everything slows down in the best way. A perfect moment of peace.”</p>
+                            </div>
+                        </div>
+                
+                        <div data-index="5" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-5.webp" alt="Woman with camera on sidewalk by fence" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Scott Wallace</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg class="not-fill" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Every morning starts with the sound of the ocean and a terrace all to myself, and it feels like a dream. Soft sunlight, fresh breeze, and complete calm — a little slice of serenity I’ll always remember.”</p>
+                            </div>
+                        </div>
+
+                        <div data-index="6" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-1.webp" alt="Man with camera and sunglasses standing outdoors" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Rodney Taylor</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg class="not-fill" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg class="not-fill" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“The combination of waking up to the waves and stepping out onto a private terrace is priceless. The early light settles in so softly, and the sea breeze brings instant tranquility. A wonderfully peaceful experience.”</p>
+                            </div>
+                        </div>
+
+                        <div data-index="2" class="reviews-section__slider-slide swiper-slide">
+                            <img src="./assets/img/reviews-section/reviews-2.webp" alt="Man in olive turtleneck with suspenders, hand behind head, against white wall" class="reviews-section__slider-slide__img">
+                            <div class="reviews-section__slider-slide__content-box">
+                                <div class="reviews-section__slider-slide__content-box__racking">
+                                    <p class="reviews-section__slider-slide__content-box__title">Richard Allen</p>
+                                    <div class="stars-box">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                        <svg class="not-fill" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.673.825c.336-1.101 1.895-1.101 2.231 0l1.71 5.598c.15.49.603.826 1.116.826h5.679c1.112 0 1.593 1.409.713 2.09l-4.716 3.645c-.384.296-.544.8-.402 1.264l1.771 5.8c.333 1.088-.929 1.96-1.829 1.264l-4.444-3.435a1.17 1.17 0 0 0-1.427 0L5.63 21.312c-.9.696-2.162-.176-1.83-1.264l1.772-5.8a1.17 1.17 0 0 0-.402-1.264L.455 9.338c-.88-.68-.4-2.09.713-2.09h5.68c.512 0 .965-.334 1.115-.825z" /></svg>
+                                    </div>
+                                </div>
+                                <p class="reviews-section__slider-slide__content-box__descr">“Mornings here feel like a quiet retreat — just me, the terrace, and the sound of the ocean. The gentle sunlight and cool breeze blend into a moment of pure calm. Something I’ll hold onto for a long time.”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="reviews-section__arrow reviews-section__arrow--prev" aria-label="Previous slide">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M.401 21.615 19.68 40.893a1.37 1.37 0 1 0 1.936-1.939L4.67 22.011h35.251a1.362 1.362 0 0 0 .964-2.328 1.36 1.36 0 0 0-.964-.4H4.67L21.615 2.338a1.37 1.37 0 0 0 0-1.936L21.614.4a1.37 1.37 0 0 0-1.936 0L.4 19.68a1.37 1.37 0 0 0 0 1.936" fill="#010101"/>
+                        </svg>
+                    </button>
+                    <button class="reviews-section__arrow reviews-section__arrow--next" aria-label="Next slide">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.886 19.678 21.608.4a1.37 1.37 0 0 0-1.935 1.939l16.943 16.943H1.365A1.362 1.362 0 0 0 .4 21.61c.255.256.602.4.964.4h35.252L19.672 38.955a1.37 1.37 0 0 0 0 1.936l.001.001a1.37 1.37 0 0 0 1.937 0l19.277-19.278a1.37 1.37 0 0 0-.001-1.936" fill="#010101"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <!-- contact section -->
-        <section class="contact-section"></section>
+        <section class="contact-section">
+            <div class="contact-section__wrapper container">
+                <div class="contact-section__container">
+                    <div class="contact-section__form-box">
+                        <h2 class="contact-section__form-box-title">. step into Your personal haven of calm</h2>
+                        <form id="contact-form" class="contact-form">
+
+                            <div class="contact-form__input-row">
+                                <div class="contact-form__input-wrapper">
+                                    <!-- <label for="firstName">First name</label> -->
+                                    <input type="text" id="firstName" name="firstName" placeholder="First name">
+                                </div>
+                                <div class="contact-form__input-wrapper">
+                                    <!-- <label for="lastName">Last name</label> -->
+                                    <input type="text" id="lastName" name="lastName" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="contact-form__input-wrapper">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="email" id="email" name="email" required placeholder="Email">
+                            </div>
+
+                            <div class="custom-select" data-select>
+                                <button class="custom-select__trigger" type="button" aria-haspopup="listbox" aria-expanded="false"
+                                    aria-labelledby="inquiry-label" data-select-trigger>
+                                    <span id="inquiry-label">What is your inquiry about?</span>
+                                    <svg width="17" height="10" viewBox="0 0 17 10" aria-hidden="true">
+                                        <path d="m.717.697 7.428 7.64a.1.1 0 0 0 .144 0l7.428-7.64" stroke="#fff" stroke-opacity=".7"
+                                            stroke-width="2" />
+                                    </svg>
+                                </button>
+                            
+                                <ul class="custom-select__options" role="listbox" tabindex="-1" data-select-options>
+                                    <li role="option" data-value="booking" tabindex="0">Booking a stay</li>
+                                    <li role="option" data-value="tour" tabindex="0">Private tour</li>
+                                    <li role="option" data-value="availability" tabindex="0">Availability & Rates</li>
+                                    <li role="option" data-value="special requests" tabindex="0">Special Requests</li>
+                                    <li role="option" data-value="general inquiry" tabindex="0">General Inquiry</li>
+                                    <li role="option" data-value="other" tabindex="0">Other</li>
+                                </ul>
+                            
+                                <!-- true input field -->
+                                <input class="hidden-input" type="hidden" name="inquiry" data-select-hidden />
+                            </div>
+
+                            <div class="contact-form__input-wrapper">
+                                <!-- <label for="message">Message</label> -->
+                                <textarea id="message" name="message" rows="1" placeholder="Message" ></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Contact Us
+                                <div class="submit-btn__icon">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11 11 1m0 0v8m0-8H3.301" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- faq section -->
         <section class="faq-section"></section>
@@ -68,6 +325,7 @@
         
     <footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
