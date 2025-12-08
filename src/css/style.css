@@ -590,7 +590,6 @@ a {
 }
 
 .footer-btns__btn,
-.footer-contact__link,
 .address-box__link a {
     text-decoration: underline;
     text-decoration-color: var(--color-black);
@@ -603,7 +602,6 @@ a {
 }
 
 .footer-btns__btn:hover,
-.footer-contact__link:hover,
 .address-box__link a:hover {
     text-decoration-color: transparent;
 }
@@ -647,13 +645,20 @@ a {
 }
 
 .footer-item__links a:hover::after{
-    transform: scale(1.2);
+    transform: scale(1.1);
     top: -6px;
     right: -20px;
 }
 
 .footer-item__links a::after {
-    content: "↗";
+    content: "";
+    width: 14px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-image: url(../../assets/svg/form-btn-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: inherit;
     transform: scale(0.7);
     position: absolute;
