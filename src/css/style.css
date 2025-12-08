@@ -16,6 +16,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -424,6 +425,7 @@ a {
     box-shadow: none;
     outline: none;
     border: none;
+    border-radius: 0px;
     transition: all 500ms ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.432);
 }
@@ -440,6 +442,7 @@ a {
 }
 
 .submit-btn {
+    color: var(--color-black);
     display: inline-flex;
     align-items: center;
     width: fit-content;
@@ -651,6 +654,7 @@ a {
 
 .footer-item__links a::after {
     content: "↗";
+    font-family: inherit;
     transform: scale(0.7);
     position: absolute;
     top: -10px;
