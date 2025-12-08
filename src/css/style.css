@@ -369,7 +369,7 @@ a {
     padding: 84px 46px;
     border-radius: 50px;    
     background: linear-gradient(270deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.01) 100%);
-    background-image: url(/assets/img/contact-section/contact-bg.webp);
+    background-image: url(../../assets/img/contact-section/contact-bg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -550,7 +550,7 @@ a {
 /* dima: FOOTER */
 
 .footer {
-    background-image: url(/assets/img/footer-section/footer-bg.webp);
+    background-image: url(../../assets/img/footer-section/footer-bg.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
