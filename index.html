@@ -31,25 +31,149 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    
-    <header id="header" class="header">
+    <section class="hero">
+  <header class="hero-header">
+    <nav class="hero-nav">
+      <ul class="nav-links">
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Off market</a></li>
+      </ul>
 
-        <!-- navigation -->
+      <img src="./assets/svg/logo.svg" alt="AUREA Logo">
+      
+      <ul class="nav-links right">
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
 
         <!-- hero-banner  -->
+          <div class="hero-content">
+            <h1 class="hero-title">Sea. Silence. Space.</h1>
+            <div class="hero-row">
+            <p class="hero-subtitle">
+            A singular residence where architecture, <br>
+            silence, and sunlight meet in perfect balance.
+            </p>
 
-    </header>
+            <a href="#" class="hero-btn">
+            Contact Us    →
+            </a>
+            </div>
+        </div>
+    </section>
 
     <main id="main" class="main">
         
         <!-- about-us section -->
-        <section class="aboutus-section"></section>
+        <section class="aboutus-section">
+              <div class="aboutus-container">
+
+    <!-- LEFT TEXT -->
+    <div class="aboutus-left">
+      <h2 class="aboutus-title-left">. more than<br>home</h2>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="aboutus-right">
+      <div class="aboutus-right-text-part">
+      <p class="aboutus-title">Where Silence Meets The Sea. </p>
+
+      <div class="aboutus-text-grid">
+        <p class="aboutus-text-grid-p">
+          Between sky and water, AUREA stands <br>
+           apart – a quiet refuge where <br> 
+           design and horizon become one.
+        </p>
+        <p class="aboutus-text-grid-p">
+          Soft light fills the rooms by day, <br> while evenings echo with waves <br>
+          and golden calm.
+        </p>
+        </div>
+      </div>
+
+   <!-- Arrows -->
+      <div class="slider-arrows">
+          <button class="arrow prev">←</button>
+          <button class="arrow next">→</button>
+        </div>
+
+        <!-- Pagination-->
+        <div class="slider-pagination">
+          <div class="slider-bar">
+            <div class="slider-bar-fill"></div>
+          </div>
+        </div>
+
+      <!-- SLIDER -->
+      <div class="aboutus-slider">  
+          <img src="assets/img/img1.jpg" class="slide active">
+          <img src="assets/img/img2.jpg" class="slide">
+          <img src="assets/img/img3.jpg" class="slide">
+      </div>
+
+      <!-- COUNTERS -->
+      <div class="aboutus-counters">
+        <div class="counter-item">
+          <div class="counter-number" data-target="10">0</div>
+          <div class="counter-label">Residences</div>
+        </div>
+
+        <div class="counter-item">
+          <div class="counter-number" data-target="600">0</div>
+          <div class="counter-label">Guests</div>
+        </div>
+
+        <div class="counter-item">
+          <div class="counter-number" data-target="9999">0</div>
+          <div class="counter-label">Serenity</div>
+        </div>
+      </div>
+
+    </div>
+        </section>
 
         <!-- portfolio section -->
         <section class="portfolio-section"></section>
 
         <!-- products section -->
-        <section class="aboutus-section"></section>
+        <section class="products-section">
+          <div class="products-container">
+            <div class="products-header">
+              <div class="products-title-wrap">
+                <h2 class="products-title">. designed for pure comfort</h2>
+              </div>
+              <div class="products-nav">
+                <button class="products-nav-btn-prev products-prev" aria-label="Previous product slide">←</button>
+                <button class="products-nav-btn-next products-next" aria-label="Next product slide">→</button>
+              </div>
+            </div>
+
+            <div class="products-grid">
+              <div class="products-active">
+                <img class="products-active-image" src="assets/img/img01.png" alt="Active product slide">
+                <div class="products-active-meta">
+                  <div class="products-active-index">
+                    <h4>01</h4></div>
+                  <div class="products-active-text">
+                    <div class="products-active-title">Private Sea Access</div>
+                    <p class="products-active-desc">
+                      Step from your terrace directly onto the shoreline – no crowds, no noise.
+                      Just you and the sea, creating an unparalleled sense of calm and privacy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products-thumbs" id="products-thumbs"></div>
+            </div>
+          </div>
+        </section>
 
         <!-- reviews section -->
         <section class="reviews-section"></section>
@@ -58,7 +182,59 @@
         <section class="contact-section"></section>
 
         <!-- faq section -->
-        <section class="faq-section"></section>
+        <section class="faq-section">
+          <div class="faq-container">
+
+        <div class="faq-header-column">
+            <h2 class="faq-title">F.A.Q</h2>
+            <p class="faq-subtitle">
+                If there are question you want to ask.<br>
+                We will answer all your question.
+            </p>
+        </div>
+
+        <div class="faq-questions-column">
+
+            <details class="faq-item" open>
+                <summary class="faq-question">
+                    What is cluster housing perumnas?
+                </summary>
+                <div class="faq-answer">
+                    Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster. 
+                    Cluster housing perumnas offers comfortable, secure, and affordable housing with various complete and modern facilities.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    Where is the location of cluster housing perumnas?
+                </summary>
+                <div class="faq-answer">
+                    [Текст ответа 2]
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    How much are the prices and types of houses <br> in cluster housing perumnas?
+                </summary>
+                <div class="faq-answer">
+                    [Текст ответа 3]
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    What are the facilities provided in cluster <br> housing perumnas?
+                </summary>
+                <div class="faq-answer">
+                    [Текст ответа 4]
+                </div>
+            </details>
+
+        </div>
+    </div>
+        </section>
 
     <main>
 
