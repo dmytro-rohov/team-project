@@ -32,19 +32,119 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    
-    <header id="header" class="header">
 
-        <!-- navigation -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-wrapper">
+            <svg viewBox="0 0 181 62" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M64.788.75c-.746.956-3.33 2.59-7.7 1.482-4.371-1.109-6.146.132-6.487.89" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/><path d="M15.3 11.365h2.76l15.3 42h-1.92l-3.72-10.2H5.64l-3.72 10.2H0zm-9 30h20.76l-10.38-28.5zm48.944 12.78q-5.04 0-8.61-2.46-3.54-2.46-5.43-6.6-1.86-4.17-1.86-9.24v-24.48h1.8v24.48q0 4.5 1.62 8.25t4.77 6 7.71 2.25q4.62 0 7.74-2.28 3.15-2.28 4.74-6.03 1.62-3.75 1.62-8.19v-24.48h1.8v24.48q0 3.81-1.08 7.14-1.05 3.3-3.09 5.82a14.2 14.2 0 0 1-5.01 3.93q-2.94 1.41-6.72 1.41m23.124-.78v-42h12.84q3.3 0 5.97 1.59 2.67 1.56 4.23 4.29 1.56 2.7 1.56 6.12 0 3.27-1.44 5.88t-3.9 4.23q-2.43 1.59-5.4 1.83l10.44 18.06h-2.1l-10.44-18h-9.96v18zm1.8-19.8h11.04q2.73 0 4.98-1.32a9.9 9.9 0 0 0 3.63-3.63q1.35-2.31 1.35-5.25t-1.35-5.25a9.9 9.9 0 0 0-3.63-3.63q-2.25-1.32-4.98-1.32h-11.04zm31.188 19.8v-42h24.96v1.8h-23.16v16.8h19.68v1.8h-19.68v19.8h23.16v1.8zm45.682-42h2.76l15.3 42h-1.92l-3.72-10.2h-22.08l-3.72 10.2h-1.92zm-9 30h20.76l-10.38-28.5z" fill="#fff"/></svg>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <header class="hero-header">
+            <nav class="hero-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Off market</a></li>
+                </ul>
+
+                <img src="./assets/svg/logo.svg" alt="AUREA Logo">
+
+                <ul class="nav-links right">
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- hero-banner  -->
+        <div class="hero-content">
+            <h1 class="hero-title">Sea. Silence. Space.</h1>
+            <div class="hero-row">
+                <p class="hero-subtitle">
+                    A singular residence where architecture, <br>
+                    silence, and sunlight meet in perfect balance.
+                </p>
 
-    </header>
+                <a href="#" class="hero-btn">
+                    Contact Us →
+                </a>
+            </div>
+        </div>
+    </section>
 
     <main id="main" class="main">
         
         <!-- about-us section -->
-        <section id="about-us" class="aboutus-section"></section>
+        <section class="aboutus-section">
+            <div class="aboutus-container">
+        
+                <!-- LEFT TEXT -->
+                <div class="aboutus-left">
+                    <h2 class="aboutus-title-left">. more than<br>home</h2>
+                </div>
+        
+                <!-- RIGHT SIDE -->
+                <div class="aboutus-right">
+                    <div class="aboutus-right-text-part">
+                        <p class="aboutus-title">Where Silence Meets The Sea. </p>
+        
+                        <div class="aboutus-text-grid">
+                            <p class="aboutus-text-grid-p">
+                                Between sky and water, AUREA stands <br>
+                                apart – a quiet refuge where <br>
+                                design and horizon become one.
+                            </p>
+                            <p class="aboutus-text-grid-p">
+                                Soft light fills the rooms by day, <br> while evenings echo with waves <br>
+                                and golden calm.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Arrows -->
+                    <div class="slider-arrows">
+                        <button class="arrow prev">←</button>
+                        <button class="arrow next">→</button>
+                    </div>
+        
+                    <!-- Pagination-->
+                    <div class="slider-pagination">
+                        <div class="slider-bar">
+                            <div class="slider-bar-fill"></div>
+                        </div>
+                    </div>
+        
+                    <!-- SLIDER -->
+                    <div class="aboutus-slider">
+                        <img src="assets/img/img1.jpg" class="slide active">
+                        <img src="assets/img/img2.jpg" class="slide">
+                        <img src="assets/img/img3.jpg" class="slide">
+                    </div>
+        
+                    <!-- COUNTERS -->
+                    <div class="aboutus-counters">
+                        <div class="counter-item">
+                            <div class="counter-number" data-target="10">0</div>
+                            <div class="counter-label">Residences</div>
+                        </div>
+        
+                        <div class="counter-item">
+                            <div class="counter-number" data-target="600">0</div>
+                            <div class="counter-label">Guests</div>
+                        </div>
+        
+                        <div class="counter-item">
+                            <div class="counter-number" data-target="9999">0</div>
+                            <div class="counter-label">Serenity</div>
+                        </div>
+                    </div>
+        
+                </div>
+        </section>
 
         <!-- portfolio section -->
         <section id="portfolio" class="portfolio-section">
@@ -88,7 +188,38 @@
         </section>
 
         <!-- products section -->
-        <section id="products" class="products-section"></section>
+        <section class="products-section">
+          <div class="products-container">
+            <div class="products-header">
+              <div class="products-title-wrap">
+                <h2 class="products-title">. designed for pure comfort</h2>
+              </div>
+              <div class="products-nav">
+                <button class="products-nav-btn-prev products-prev" aria-label="Previous product slide">←</button>
+                <button class="products-nav-btn-next products-next" aria-label="Next product slide">→</button>
+              </div>
+            </div>
+
+            <div class="products-grid">
+              <div class="products-active">
+                <img class="products-active-image" src="assets/img/img01.png" alt="Active product slide">
+                <div class="products-active-meta">
+                  <div class="products-active-index">
+                    <h4>01</h4></div>
+                  <div class="products-active-text">
+                    <div class="products-active-title">Private Sea Access</div>
+                    <p class="products-active-desc">
+                      Step from your terrace directly onto the shoreline – no crowds, no noise.
+                      Just you and the sea, creating an unparalleled sense of calm and privacy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products-thumbs" id="products-thumbs"></div>
+            </div>
+          </div>
+        </section>
 
         <!-- reviews section -->
         <section id="reviews" class="reviews-section">
@@ -316,7 +447,60 @@
         </section>
 
         <!-- faq section -->
-        <section id="faq" class="faq-section"></section>
+        <section class="faq-section">
+            <div class="faq-container">
+        
+                <div class="faq-header-column">
+                    <h2 class="faq-title">F.A.Q</h2>
+                    <p class="faq-subtitle">
+                        If there are question you want to ask.<br>
+                        We will answer all your question.
+                    </p>
+                </div>
+        
+                <div class="faq-questions-column">
+        
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            What is cluster housing perumnas?
+                        </summary>
+                        <div class="faq-answer">
+                            Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster.
+                            Cluster housing perumnas offers comfortable, secure, and affordable housing with various complete
+                            and modern facilities.
+                        </div>
+                    </details>
+        
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Where is the location of cluster housing perumnas?
+                        </summary>
+                        <div class="faq-answer">
+                            [Текст ответа 2]
+                        </div>
+                    </details>
+        
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            How much are the prices and types of houses <br> in cluster housing perumnas?
+                        </summary>
+                        <div class="faq-answer">
+                            [Текст ответа 3]
+                        </div>
+                    </details>
+        
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            What are the facilities provided in cluster <br> housing perumnas?
+                        </summary>
+                        <div class="faq-answer">
+                            [Текст ответа 4]
+                        </div>
+                    </details>
+        
+                </div>
+            </div>
+        </section>
 
     <main>
 
@@ -358,9 +542,9 @@
             </div>
             <div class="footer-item footer-item--info">
                 <nav class="footer-item__links">
-                    <a href="#" rel="noopener noreferrer" class="footer-item__links__link">Designers LinkedIn</a>
-                    <a href="#"  rel="noopener noreferrer" class="footer-item__links__link">Developers 1 LinkedIn</a>
-                    <a href="#" rel="noopener noreferrer" class="footer-item__links__link">Developers 2 LinkedIn</a>
+                    <a target="_blank" href="#" rel="noopener noreferrer" class="footer-item__links__link">Designers LinkedIn</a>
+                    <a target="_blank" href="#"  rel="noopener noreferrer" class="footer-item__links__link">Developers 1 LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/dmytro-rohov-3b799428a/" rel="noopener noreferrer" class="footer-item__links__link">Developers 2 LinkedIn</a>
                 </nav>
                 <div class="footer-item__addres-box">
                     <address>123 Paint Avenue Colorville, PA 19000</address>

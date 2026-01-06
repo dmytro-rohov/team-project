@@ -128,9 +128,107 @@ a {
     cursor: pointer;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
 
 /* ------------- */
 
+/* dima: PRELOADER */
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: var(--color-black);
+    transition: all 500ms ease;
+}
+
+.preloader-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader svg {
+  width: 320px;
+  animation: float 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-4px) rotate(-2deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(4px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* danya: nav + header */
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px;
+padding: 0px 80px;
+gap: 20px;
+  z-index: 5;
+}
+
+.hero-title {
+  font-size: 200px;
+  line-height: 1.1;
+  color: white;
+  margin-left: 20px;
+}
+
+.hero-subtitle {
+  margin-top: 28px;
+  font-size: 28px;
+  opacity: 0.9;
+  width: 650px;
+  color: #ffffff;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 70px;
+}
+
+/* --- BUTTON --- */
+.hero-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 24px 54px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
 
 /* dima: PORTFOLIO */
 
@@ -353,6 +451,61 @@ a {
     right: 26%;
 }
 
+/* light box
+
+.image-popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    z-index: 9999;
+}
+
+.image-popup__overlay {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.image-popup__content {
+    position: relative;
+    z-index: 10;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.image-popup__content img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio: 400 / 410;
+    display: block;
+}
+
+.image-popup__close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    top: -22px;
+    right: -22px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-white);
+    padding: 0;
+    cursor: pointer;
+} */
+
+
 /* dima: CONTACT  */
 
 .contact-section {
@@ -368,7 +521,7 @@ a {
     display: flex;
     justify-content: end;
     padding: 84px 46px;
-    border-radius: 50px;    
+    border-radius: 30px;    
     background: linear-gradient(270deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.01) 100%);
     background-image: url(../../assets/img/contact-section/contact-bg.webp);
     background-position: center center;
@@ -719,6 +872,10 @@ a {
         bottom: 30%;
     }
 
+    .image-popup__content img { 
+        width: 400px;
+    }
+
     .contact-section__container {
         padding: 60px 46px;
     }
@@ -892,7 +1049,9 @@ a {
     .footer-contact__link:not(:last-child){
         margin-bottom: 16px;
     }
-
+    .preloader svg {
+        width: 260px;
+    }
 }
 
 /* mobile */
@@ -909,6 +1068,10 @@ a {
 
     h3 {
         font-size: 20px;
+    }
+
+    .preloader svg {
+        width: 180px;
     }
 
     .reviews-section__title {
@@ -973,6 +1136,14 @@ a {
 
     .reviews-section__arrow--next {
         right: 20%;
+    }
+
+    .image-popup__close {
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+        right: -14px;
+        top: -24px;
     }
 
     .contact-section {

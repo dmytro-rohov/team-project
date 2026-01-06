@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // SCROLL SECTION
+
+  const preloader = document.getElementById("preloader");
+
+  // scrolling block
+  document.body.classList.add("no-scroll");
+
+  // TODO: PRELOADER
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      preloader.classList.add("hide"); 
+      document.body.classList.remove("no-scroll"); 
+    }, 1500)
+  })
+
+  // TODO: SCROLL SECTION
   const section = document.querySelector(".portfolio-section");
   const items = [...document.querySelectorAll(".portfolio-section__item")];
 
@@ -66,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", handleScrollAnimation);
 
-  // REVIEWS SLIDER
+  // TODO: REVIEWS SLIDER
   const reviewsSlider = new Swiper(".reviews-section__slider", {
     slidesPerView: 5,
     spaceBetween: 80,
@@ -103,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // function to add prev-2 and next-2
+  //  function to add prev-2 and next-2
   function updateExtendedClasses(swiper) {
     swiper.slides.forEach((slide) => {
       slide.classList.remove("prev-2", "next-2");
@@ -119,6 +133,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (next2) next2.classList.add("next-2");
   }
+
+
+  // checking method thoe slider is swiping
+  let isDragging = false;
+
+  reviewsSlider.on("touchStart", () => {
+    isDragging = false;
+  });
+
+  reviewsSlider.on("touchMove", () => {
+    isDragging = true;
+  });
+
+  document.querySelectorAll(".reviews-slider-slide__img").forEach(img => {
+    img.addEventListener("click", (e) => {
+      if (isDragging) return;
+      const slide = img.closest(".reviews-slider-slide");
+      if (slide.classList.contains('swiper-slide-active')) {
+        openPopup(img.src);
+      }
+    });
+  });
+
+  // // function to open center slide image in lightbox
+  // function openPopup(src) {
+  //   const popup = document.createElement("div");
+  //   popup.classList.add("image-popup");
+  //   popup.innerHTML = `
+  //     <div class="image-popup__overlay"></div>
+  //     <div class="image-popup__content">
+  //       <img src="${src}" alt="Preview">
+  //       <button class="image-popup__close">×</button>
+  //     </div>`;
+  //     document.body.appendChild(popup);
+  //     document.body.classList.add("no-scroll")
+
+  //     popup.querySelector(".image-popup__close").addEventListener("click", () => {
+  //       popup.remove();
+  //       document.body.classList.remove("no-scroll");
+  //     });
+
+  //     popup.querySelector(".image-popup__overlay").addEventListener("click", () =>{
+  //       popup.remove();
+  //       document.body.classList.remove("no-scroll");
+
+  //     });
+  // }
+
 
   // CUSTOM DROP DOWN LIST
   const customSelect = document.querySelector(".custom-select");
