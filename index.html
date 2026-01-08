@@ -39,93 +39,109 @@
         </div>
     </div>
     
-    <section class="hero">
+    <section id="header" class="hero">
         <header class="hero-header">
             <nav class="hero-nav">
-                <ul class="nav-links">
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Sell</a></li>
-                    <li><a href="#">Off market</a></li>
-                </ul>
 
-                <img src="./assets/svg/logo.svg" alt="AUREA Logo">
-
-                <ul class="nav-links right">
-                    <li><a href="#">Agents</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- hero-banner  -->
-        <div class="hero-content">
-            <h1 class="hero-title">Sea. Silence. Space.</h1>
-            <div class="hero-row">
-                <p class="hero-subtitle">
-                    A singular residence where architecture, <br>
-                    silence, and sunlight meet in perfect balance.
-                </p>
-
-                <a href="#" class="hero-btn">
-                    Contact Us →
+                <a href="#" class="logo-link">
+                    <svg viewBox="0 0 181 62"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64.788.75c-.746.956-3.33 2.59-7.7 1.482-4.371-1.109-6.146.132-6.487.89"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+                        <path d="M15.3 11.365h2.76l15.3 42h-1.92l-3.72-10.2H5.64l-3.72 10.2H0zm-9 30h20.76l-10.38-28.5zm48.944 12.78q-5.04 0-8.61-2.46-3.54-2.46-5.43-6.6-1.86-4.17-1.86-9.24v-24.48h1.8v24.48q0 4.5 1.62 8.25t4.77 6 7.71 2.25q4.62 0 7.74-2.28 3.15-2.28 4.74-6.03 1.62-3.75 1.62-8.19v-24.48h1.8v24.48q0 3.81-1.08 7.14-1.05 3.3-3.09 5.82a14.2 14.2 0 0 1-5.01 3.93q-2.94 1.41-6.72 1.41m23.124-.78v-42h12.84q3.3 0 5.97 1.59 2.67 1.56 4.23 4.29 1.56 2.7 1.56 6.12 0 3.27-1.44 5.88t-3.9 4.23q-2.43 1.59-5.4 1.83l10.44 18.06h-2.1l-10.44-18h-9.96v18zm1.8-19.8h11.04q2.73 0 4.98-1.32a9.9 9.9 0 0 0 3.63-3.63q1.35-2.31 1.35-5.25t-1.35-5.25a9.9 9.9 0 0 0-3.63-3.63q-2.25-1.32-4.98-1.32h-11.04zm31.188 19.8v-42h24.96v1.8h-23.16v16.8h19.68v1.8h-19.68v19.8h23.16v1.8zm45.682-42h2.76l15.3 42h-1.92l-3.72-10.2h-22.08l-3.72 10.2h-1.92zm-9 30h20.76l-10.38-28.5z" />
+                    </svg>
                 </a>
+
+                <button class="burger" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="burger-wrapper">
+                    <ul class="nav-links left">
+                        <li><a href="#about-us">About us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+
+                    <ul class="nav-links right">
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                        <li><a href="#faq">F.A.Q.</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="hero-content container">
+                <h1 class="hero-title">Sea. Silence. Space.</h1>
+                <div class="hero-row">
+                    <p class="hero-subtitle">
+                        A singular residence where architecture, <br>
+                        silence, and sunlight meet in perfect balance.
+                    </p>
+
+                    <a href="#contact-us" class="primary-btn hero-btn">
+                        Contact Us
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M1 11L11 1M11 1L11 9M11 1L3.30139 1" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
+        </header>
     </section>
 
     <main id="main" class="main">
         
         <!-- about-us section -->
-        <section class="aboutus-section">
+        <section id="about-us" class="aboutus-section container">
             <div class="aboutus-container">
-        
-                <!-- LEFT TEXT -->
                 <div class="aboutus-left">
                     <h2 class="aboutus-title-left">. more than<br>home</h2>
                 </div>
-        
-                <!-- RIGHT SIDE -->
+
                 <div class="aboutus-right">
                     <div class="aboutus-right-text-part">
                         <p class="aboutus-title">Where Silence Meets The Sea. </p>
         
                         <div class="aboutus-text-grid">
                             <p class="aboutus-text-grid-p">
-                                Between sky and water, AUREA stands <br>
-                                apart – a quiet refuge where <br>
+                                Between sky and water, AUREA stands 
+                                apart – a quiet refuge where 
                                 design and horizon become one.
                             </p>
                             <p class="aboutus-text-grid-p">
-                                Soft light fills the rooms by day, <br> while evenings echo with waves <br>
+                                Soft light fills the rooms by day, while evenings echo with waves
                                 and golden calm.
                             </p>
                         </div>
                     </div>
         
-                    <!-- Arrows -->
                     <div class="slider-arrows">
-                        <button class="arrow prev">←</button>
-                        <button class="arrow next">→</button>
+                        <button  aria-label="Previous slide" class="arrow prev">
+                            <svg width="45" height="10" viewBox="0 0 45 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.47461 0.00683594C8.69135 0.0483136 8.83312 0.257837 8.79199 0.474609C8.64419 1.24876 8.17931 1.87294 7.56934 2.38184C6.96171 2.88868 6.18731 3.30057 5.37012 3.65332C4.55088 4.00694 3.66668 4.30996 2.83105 4.58887C2.80218 4.59851 2.77288 4.60859 2.74414 4.61816H44.3994C44.6202 4.61816 44.7996 4.79785 44.7998 5.01855C44.7998 5.23947 44.6203 5.41895 44.3994 5.41895H2.3291C2.47854 5.469 2.62994 5.52013 2.7832 5.57129C3.61884 5.85019 4.49781 6.15215 5.31055 6.50293C6.12193 6.85317 6.882 7.25849 7.47363 7.75195C8.06665 8.2467 8.50517 8.84314 8.64453 9.57227C8.67026 9.70779 8.58182 9.83837 8.44629 9.86426C8.3109 9.88996 8.18035 9.80132 8.1543 9.66602C8.04344 9.08618 7.69022 8.58367 7.15332 8.13574C6.615 7.68678 5.90535 7.30385 5.11328 6.96191C4.32219 6.62047 3.46082 6.32487 2.625 6.0459C1.98537 5.83241 1.35743 5.62678 0.793945 5.41895H0.399414C0.208124 5.41878 0.0433965 5.28252 0.00683594 5.09473C-0.029312 4.90718 0.0720012 4.71928 0.249023 4.64746C0.93036 4.37172 1.74855 4.10663 2.57715 3.83008C3.41314 3.55105 4.26903 3.25765 5.05371 2.91895C5.84038 2.57935 6.53517 2.20345 7.05762 1.76758C7.57765 1.33369 7.90457 0.860246 8.00684 0.325195C8.0484 0.108549 8.25789 -0.0343019 8.47461 0.00683594Z" fill="#888888"/>
+                            </svg>
+                        </button>
+
+                        <button aria-label="Next slide" class="arrow next">
+                            <svg width="45" height="10" viewBox="0 0 45 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.3262 0.00683594C36.1093 0.0483371 35.9674 0.257706 36.0088 0.474609C36.1566 1.24872 36.6215 1.87296 37.2314 2.38184C37.839 2.88859 38.6136 3.30062 39.4307 3.65332C40.2498 4.0069 41.1342 4.30998 41.9697 4.58887C41.9985 4.59849 42.028 4.60861 42.0566 4.61816H0.401367C0.180454 4.61816 0.000976562 4.79764 0.000976562 5.01855C0.000988971 5.23946 0.180462 5.41895 0.401367 5.41895H42.4717C42.3222 5.469 42.1708 5.52013 42.0176 5.57129C41.1819 5.85021 40.303 6.15212 39.4902 6.50293C38.6787 6.85321 37.9188 7.25841 37.3271 7.75195C36.734 8.2468 36.2955 8.84293 36.1562 9.57227C36.1305 9.70779 36.219 9.83837 36.3545 9.86426C36.4898 9.88989 36.6204 9.80128 36.6465 9.66602C36.7572 9.08599 37.1104 8.58379 37.6475 8.13574C38.1858 7.68671 38.8953 7.30389 39.6875 6.96191C40.4786 6.62044 41.3399 6.32488 42.1758 6.0459C42.8148 5.83263 43.4418 5.62656 44.0049 5.41895H44.4014C44.5926 5.41876 44.7574 5.28251 44.7939 5.09473C44.8303 4.9071 44.7288 4.7194 44.5518 4.64746C43.8705 4.37174 43.0522 4.10661 42.2236 3.83008C41.3877 3.55108 40.5317 3.25762 39.7471 2.91895C38.9605 2.5794 38.2656 2.20336 37.7432 1.76758C37.2232 1.33371 36.8962 0.860211 36.7939 0.325195C36.7525 0.108325 36.543 -0.0343597 36.3262 0.00683594Z" fill="#888888"/>
+                            </svg>
+                        </button>
                     </div>
         
-                    <!-- Pagination-->
                     <div class="slider-pagination">
-                        <div class="slider-bar">
+                        <div class="slider-bar" role="progressbar">
                             <div class="slider-bar-fill"></div>
                         </div>
                     </div>
         
-                    <!-- SLIDER -->
                     <div class="aboutus-slider">
-                        <img src="assets/img/img1.jpg" class="slide active">
-                        <img src="assets/img/img2.jpg" class="slide">
-                        <img src="assets/img/img3.jpg" class="slide">
+                        <img src="assets/img/about-us-section/img01.webp" alt="A beach scene featuring a house nearby, with a body of water visible. There are trees and a clear sky overhead, along with sandy ground by the shore. " class="slide active">
+                        <img src="assets/img/about-us-section/img02.webp" alt="A spacious room featuring large windows that offer a stunning view of the ocean, with elegant interior design elements including a coffee table, plants, and tasteful furniture." class="slide">
+                        <img src="assets/img/about-us-section/img03.webp" alt="A spacious living room featuring a large window that allows natural light to flood the space." class="slide">
                     </div>
         
-                    <!-- COUNTERS -->
                     <div class="aboutus-counters">
                         <div class="counter-item">
                             <div class="counter-number" data-target="10">0</div>
@@ -138,7 +154,7 @@
                         </div>
         
                         <div class="counter-item">
-                            <div class="counter-number" data-target="9999">0</div>
+                            <div class="counter-number" data-target="1000">0</div>
                             <div class="counter-label">Serenity</div>
                         </div>
                     </div>
@@ -188,35 +204,100 @@
         </section>
 
         <!-- products section -->
-        <section class="products-section">
-          <div class="products-container">
+        <section id="offers" class="products-section ">
+          <div class="products-container container">
             <div class="products-header">
-              <div class="products-title-wrap">
                 <h2 class="products-title">. designed for pure comfort</h2>
-              </div>
-              <div class="products-nav">
-                <button class="products-nav-btn-prev products-prev" aria-label="Previous product slide">←</button>
-                <button class="products-nav-btn-next products-next" aria-label="Next product slide">→</button>
-              </div>
+                <div class="products-nav">
+                    <button class="products-arrow products-prev " aria-label="Previous product slide">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1L1 11.5L11.5 22" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="products-arrow products-next" aria-label="Next product slide">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L11.5 11.5L1 22" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="products-grid">
-              <div class="products-active">
-                <img class="products-active-image" src="assets/img/img01.png" alt="Active product slide">
-                <div class="products-active-meta">
-                  <div class="products-active-index">
-                    <h4>01</h4></div>
-                  <div class="products-active-text">
-                    <div class="products-active-title">Private Sea Access</div>
-                    <p class="products-active-desc">
-                      Step from your terrace directly onto the shoreline – no crowds, no noise.
-                      Just you and the sea, creating an unparalleled sense of calm and privacy.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class=" swiper products-grid">  
+                <div class="swiper-wrapper">
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img01.webp" alt="A beach scene featuring a house nearby, with a body of water visible. There are trees and a clear sky overhead, along with sandy ground by the shore.">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">01</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">Private Sea Access</h3>
+                                <p class="product-item-desc">Step from your terrace directly onto the shoreline – no crowds, no noise.
+                                Just you and the sea, creating an unparalleled sense of calm and privacy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img02.webp" alt="A spacious room featuring large windows that offer a stunning view of the ocean, with elegant interior design elements including a coffee table, plants, and tasteful furniture.">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">02</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">Panoramic Glass Walls</h3>
+                                <p class="product-item-desc">Floor-to-ceiling windows open the room to the horizon, 
+filling it with natural light and creating a seamless connection with nature.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img03.webp" alt="A spacious living room featuring a large window that allows natural light to flood the space.">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">03</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">High-End Materials</h3>
+                                <p class="product-item-desc">Natural, durable materials chosen for warmth, longevity, 
+and timeless luxury. Every detail exudes quality and sophistication.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img04.webp" alt="A man stands at a reception desk in an interior space adorned with furniture and houseplants">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">04</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">24/7 Security & Concierge</h3>
+                                <p class="product-item-desc">Discreet, professional service that keeps your day smooth and secure. Round-the-clock support ensures your comfort and peace of mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img05.webp" alt="A hand holding a mobile phone while seated in a room with a large window, featuring a couch and various interior design elements.">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">05</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">Smart-Home System</h3>
+                                <p class="product-item-desc">Control lighting, climate, and security directly from your phone. 
+Smart-home technology makes everyday life effortless and personalized.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img class="product-item-image" src="assets/img/about-us-section/img06.webp" alt="A scenic path lined with greenery leading to a sandy beach, with palm trees and a clear blue sky above.
 
-              <div class="products-thumbs" id="products-thumbs"></div>
+
+">
+                        <div class="product-item-meta">
+                            <p class="product-item-index">06</p>
+                            <div class="product-item-text">
+                                <h3 class="product-item-title">Low-Density Living</h3>
+                                <p class="product-item-desc">Few residents, more privacy. Space to breathe, relax, and enjoy your home in peace and quiet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </section>
@@ -447,8 +528,8 @@
         </section>
 
         <!-- faq section -->
-        <section class="faq-section">
-            <div class="faq-container">
+        <section id="faq" class="faq-section">
+            <div class="faq-container container ">
         
                 <div class="faq-header-column">
                     <h2 class="faq-title">F.A.Q</h2>
@@ -460,41 +541,49 @@
         
                 <div class="faq-questions-column">
         
-                    <details class="faq-item" open>
+                    <details name="faq-tab" class="faq-item" open>
                         <summary class="faq-question">
                             What is cluster housing perumnas?
                         </summary>
-                        <div class="faq-answer">
-                            Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster.
-                            Cluster housing perumnas offers comfortable, secure, and affordable housing with various complete
-                            and modern facilities.
+                        <div class="faq-wrapper">
+                            <div class="faq-answer">
+                                Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster.
+                                Cluster housing perumnas offers comfortable, secure, and affordable housing with various complete
+                                and modern facilities.
+                            </div>
                         </div>
                     </details>
         
-                    <details class="faq-item">
+                    <details name="faq-tab" class="faq-item">
                         <summary class="faq-question">
                             Where is the location of cluster housing perumnas?
                         </summary>
-                        <div class="faq-answer">
-                            [Текст ответа 2]
+                        <div class="faq-wrapper">
+                            <div class="faq-answer">
+                                Cluster Housing Perumnas is strategically located in a well-developed residential area with easy access to main roads, public transportation, schools, shopping centers, and other essential facilities. The location is designed to provide a comfortable living environment while remaining well-connected to the city.
+                            </div>
                         </div>
                     </details>
         
-                    <details class="faq-item">
+                    <details name="faq-tab" class="faq-item">
                         <summary class="faq-question">
-                            How much are the prices and types of houses <br> in cluster housing perumnas?
+                            How much are the prices and types of houses in cluster housing perumnas?
                         </summary>
-                        <div class="faq-answer">
-                            [Текст ответа 3]
+                        <div class="faq-wrapper">
+                            <div class="faq-answer">
+                                Cluster Housing Perumnas offers a variety of house types to suit different needs and budgets. Prices vary depending on the house size, type, and selected features. For detailed pricing information and available unit types, please contact our sales team or visit our official marketing office.
+                            </div>
                         </div>
                     </details>
         
-                    <details class="faq-item">
+                    <details name="faq-tab" class="faq-item">
                         <summary class="faq-question">
-                            What are the facilities provided in cluster <br> housing perumnas?
+                           What are the facilities provided in cluster housing perumnas?
                         </summary>
-                        <div class="faq-answer">
-                            [Текст ответа 4]
+                        <div class="faq-wrapper">
+                            <div class="faq-answer">
+                                Cluster Housing Perumnas is equipped with modern facilities to support a safe and comfortable lifestyle. These include 24-hour security, a gated cluster system, green open spaces, children’s playgrounds, well-maintained internal roads, and easy access to public facilities around the residential area.
+                            </div>
                         </div>
                     </details>
         
@@ -532,7 +621,7 @@
                 <div class="footer-item__btns">
                     <a href="#about-us" class="footer-btns__btn">About us</a>
                     <a href="#portfolio" class="footer-btns__btn">Portfolio</a>
-                    <a href="#products" class="footer-btns__btn">Products</a>
+                    <a href="#offers" class="footer-btns__btn">Offers</a>
                 </div>
                 <div class="footer-item__btns">
                     <a href="#reviews" class="footer-btns__btn">Reviews</a>
@@ -542,7 +631,7 @@
             </div>
             <div class="footer-item footer-item--info">
                 <nav class="footer-item__links">
-                    <a target="_blank" href="#" rel="noopener noreferrer" class="footer-item__links__link">Designers LinkedIn</a>
+                    <a target="_blank" href="http://linkedin.com/in/malykd" rel="noopener noreferrer" class="footer-item__links__link">Designers LinkedIn</a>
                     <a target="_blank" href="#"  rel="noopener noreferrer" class="footer-item__links__link">Developers 1 LinkedIn</a>
                     <a target="_blank" href="https://www.linkedin.com/in/dmytro-rohov-3b799428a/" rel="noopener noreferrer" class="footer-item__links__link">Developers 2 LinkedIn</a>
                 </nav>
