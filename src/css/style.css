@@ -113,6 +113,24 @@ a {
     padding: 0 20px;
 }
 
+.paddings--big {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.paddings--small {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.padding--top.paddings--small {
+    padding-top: 120px;
+}
+
+.padding--bottom.paddings--small {
+    padding-bottom: 120px;
+}
+
 .primary-btn {
     width: auto;
     display: inline-block;
@@ -363,11 +381,6 @@ a {
 
 /* danya: about-us */
 
-.aboutus-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .aboutus-container {
     display: flex;
     justify-content: space-between;
@@ -598,11 +611,6 @@ a {
 
 /* danya: offer(products) section */
 
-.products-section {
-    padding: 140px 0px 0px 0px;
-    overflow: hidden;
-}
-
 .products-header {
     display: flex;
     align-items: end;
@@ -679,7 +687,7 @@ a {
 }
 
 .product-item-text {
-    flex-basis: 80%;
+    flex-basis: 86%;
 }
 
 .product-item-desc {
@@ -694,10 +702,6 @@ a {
 }
 
 /* dima: REVIEWS SECTION */
-
-.reviews-section {
-    padding: 150px 0px 0px 0px;
-}
 
 .reviews-section__title {
     width: 100%;
@@ -881,10 +885,6 @@ a {
 
 
 /* dima: CONTACT  */
-
-.contact-section {
-    padding: 100px 0px 50px 0px;
-}
 
 .contact-section__wrapper {
     border-radius: 50px;
@@ -1079,10 +1079,6 @@ a {
 
 /* danya: faq */
 
-.faq-section {
-  padding: 120px 0px; 
-}
-
 .faq-container {
   display: flex; 
   align-items: flex-start;
@@ -1190,7 +1186,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: opacity(0.1);
-    padding: 100px 0px;
 }
 
 .footer-wrapper {
@@ -1358,10 +1353,6 @@ a {
         font-size: 16px;
     }
 
-    .reviews-section {
-        padding-top: 100px;
-    }
-
     .reviews-section__slider {
         padding: 30px 0px;
     }
@@ -1380,10 +1371,6 @@ a {
 
     .submit-btn {
         padding: 16px 20px;
-    }
-
-    .footer {
-        padding: 75px 0px;
     }
 
     .footer-logo {
@@ -1410,11 +1397,6 @@ a {
         padding: 14px 28px;
     }
 
-    .aboutus-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
     .aboutus-title {
         font-size: 32px;
     }
@@ -1428,15 +1410,7 @@ a {
     }
 
     .counter-label {
-        font-size: 16px;
-    }
-
-    .products-section {
-        padding: 100px 0px 0px 0px;
-    }
-
-    .faq-section {
-        padding: 50px 0px;
+        font-size: 14px;
     }
 
     .faq-questions-column {
@@ -1453,6 +1427,24 @@ a {
 
     .faq-questions-column {
         gap: 18px;
+    }
+
+    .paddings--big {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .paddings--small {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .padding--top.paddings--small {
+        padding-top: 100px;
+    }
+
+    .padding--bottom.paddings--small {
+        padding-bottom: 100px;
     }
 }
 
@@ -1585,7 +1577,7 @@ a {
 @media (max-width: 992px) {
 
     h1 {
-        font-size: 100px;
+        font-size: 82px;
     }
 
     h2 {
@@ -1597,7 +1589,7 @@ a {
     }
 
     .portfolio-section__img-caption {
-        padding: 80px 30px;
+        padding: 80px 30px 40px 30px;
     }
 
     .reviews-section__arrow--prev {
@@ -1643,7 +1635,7 @@ a {
 @media (max-width: 767px) {
 
     h1 {
-        font-size: 70px;
+        font-size: 62px;
     }
 
     h2 {
@@ -1660,10 +1652,6 @@ a {
 
     .reviews-section__title {
         margin-bottom: 40px;
-    }
-
-    .portfolio-section__img-caption {
-        padding: 20px;
     }
 
     .portfolio-section__item-title {
@@ -1684,10 +1672,6 @@ a {
 
     .container {
         padding: 0px 4%;
-    }
-    
-    .portfolio-section__img-caption {
-        padding: 4%;
     }
     
     .reviews-slider-slide.swiper-slide-active {
@@ -1722,20 +1706,12 @@ a {
         right: 20%;
     }
 
-    .reviews-section {
-        padding-top: 60px;
-    }
-
     .image-popup__close {
         width: 40px;
         height: 40px;
         font-size: 26px;
         right: -14px;
         top: -24px;
-    }
-
-    .contact-section {
-        padding: 30px 0px;
     }
 
     .contact-section__container {
@@ -1797,10 +1773,6 @@ a {
         height: 8px;
     }
 
-    .footer {
-        padding: 60px 0px;
-    }
-
     .footer-wrapper {
         flex-direction: column;
         align-items: start;
@@ -1822,10 +1794,6 @@ a {
         flex-direction: column;
     }
 
-    .aboutus-section {
-        padding: 60px 4%;
-    }
-
     .aboutus-title {
         font-size: 20px;
         margin-bottom: 20px;
@@ -1842,6 +1810,10 @@ a {
 
     .hero-btn {
         gap: 24px;
+    }
+
+    .hero-content {
+        padding-top: 40%;
     }
 
     .hero-title {
@@ -1918,9 +1890,9 @@ a {
     }
 
     .products-arrow {
-        width: 24px;
-        height: 24px;
-        padding: 8px;
+        width: 32px;
+        height: 32px;
+        padding: 12px;
     }
 
     .products-nav {
@@ -1929,6 +1901,7 @@ a {
 
     .product-item {
         flex: 0 0 100%;
+        padding-inline: 12px;
     }
 
     .product-item.--active {
@@ -1945,14 +1918,6 @@ a {
 
     .product-item-meta {
         margin-top: 18px;
-    }
-
-    .products-section {
-        padding: 60px 0px 0px 0px;
-    }
-
-    .faq-section {
-        padding: 30px 0px;
     }
 
     .faq-header-column {
@@ -1974,6 +1939,24 @@ a {
     .faq-question::after {
         font-size: 32px;
     }
+
+    .paddings--big {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .paddings--small {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .padding--top.paddings--small {
+        padding-top: 80px;
+    }
+
+    .padding--bottom.paddings--small {
+        padding-bottom: 80px;
+    }
 }
 
 /* small mobile  */
@@ -1981,7 +1964,7 @@ a {
 @media (max-width: 350px) {
 
     h1 {
-        font-size: 50px;
+        font-size: 42px;
     }
 
 
