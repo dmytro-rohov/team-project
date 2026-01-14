@@ -392,8 +392,6 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle('open');
     burgerWrapper.classList.toggle('open');
     body.classList.toggle('no-scroll');
-
-    e.stopPropagation();
   });
 
   burgerWrapper.querySelectorAll('a').forEach(link => {
@@ -401,6 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
       burger.classList.remove('open');
       burger.setAttribute('aria-expanded', 'false');
       burgerWrapper.classList.remove('open');
+      body.classList.remove('no-scroll');
     });
   });
 
@@ -409,6 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
       burger.classList.remove('open');
       burger.setAttribute('aria-expanded', 'false');
       burgerWrapper.classList.remove('open');
+      body.classList.remove('no-scroll');
     }
   });
 
