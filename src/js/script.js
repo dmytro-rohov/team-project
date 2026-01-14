@@ -2,14 +2,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // TODO: active class on menu
 
-  window.onscroll = function showHeader() {
-    let nav = document.querySelector('.hero-nav');
-    if (window.pageYOffset>100) {
-      nav.classList.add('--active');
+//   window.onscroll = function showHeader() {
+//     let nav = document.querySelector('.hero-nav');
+//     if (window.pageYOffset>100) {
+//       nav.classList.add('--active');
+//     } else {
+//       nav.classList.remove('--active');
+//     }
+//  }
+  const body = document.body;
+  const nav = document.querySelector('.hero-nav');
+
+  let lastScrollY = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.pageYOffset;
+
+    if (currentScrollY > 0) {
+      nav.classList.add("--active");
     } else {
-      nav.classList.remove('--active');
+       nav.classList.remove('--active');
     }
- }
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      nav.classList.add("nav-hidden");
+    } else {
+      nav.classList.remove('nav-hidden');
+    }
+
+    lastScrollY = currentScrollY;
+  });
 
   // TODO: PRELOADER
 
@@ -369,6 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.setAttribute('aria-expanded', !expanded);
     burger.classList.toggle('open');
     burgerWrapper.classList.toggle('open');
+    body.classList.toggle('no-scroll');
 
     e.stopPropagation();
   });
