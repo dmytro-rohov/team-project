@@ -303,7 +303,7 @@ a {
 .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 60px;
     margin-bottom: 66px;
 }
 
@@ -408,11 +408,11 @@ a {
 .aboutus-right {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 56%;
 }
 
 .aboutus-title {
-    font-size: 56px;
+    font-size: 48px;
     margin-bottom: 40px;
 }
 
@@ -427,14 +427,14 @@ a {
     width: 100%;
     position: relative;
     border-radius: 30px;
-    aspect-ratio: 880/520;
-
+    aspect-ratio: 880/400;
 }
 
 
 .aboutus-slider img {
     width: 100%;
-    aspect-ratio: 880/520;
+    aspect-ratio: 880/400;
+    border-radius: 30px;
     position: absolute;
     top: 0;
     left: 0;
@@ -587,7 +587,7 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, var(--color-black--alfa) 60%);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, #0000007a 40%);
 }
 
 .portfolio-section__img-caption::before {
@@ -598,7 +598,7 @@ a {
     z-index: 1;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, var(--color-black--alfa) 60%);
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, #0000007a 40%);
 }
 
 .portfolio-section__item-title {
@@ -709,6 +709,10 @@ a {
 }
 
 /* dima: REVIEWS SECTION */
+
+.object-position--top {
+    object-position: top;
+}
 
 .reviews-section__title {
     width: 100%;
@@ -1414,6 +1418,15 @@ a {
 
     .aboutus-text-grid-p {
         font-size: 16px;
+    }
+
+    .aboutus-slider {
+        aspect-ratio: 880/520;
+    }
+
+
+    .aboutus-slider img {
+        aspect-ratio: 880/520;
     }
 
     .counter-number {
